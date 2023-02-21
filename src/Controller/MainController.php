@@ -14,4 +14,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/home.html.twig');
     }
+
+
+    #[Route('/list', name: 'main_list')]
+    public function list(): Response
+    {
+
+        return $this->render("main/list.html.twig");
+    }
 }
