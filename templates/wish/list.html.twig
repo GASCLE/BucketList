@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <section class="FlexColumn">
+
+
+        {% for wish in wishes %}
+            <article >
+                <a href="{{ path('detail', {'id': wish.id}) }}">
+                    <h2>{{ wish.title }}</h2>
+                </a>
+            </article>
+        {% endfor %}
+
+
+    </section>
+
+
+
+
+
+{% endblock %}

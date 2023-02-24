@@ -16,10 +16,12 @@ class MainController extends AbstractController
     }
 
 
-    #[Route('/list', name: 'main_list')]
-    public function list(): Response
+
+
+    #[Route('/about', name: 'main_about')]
+    public function about(): Response
     {
 
-        return $this->render("main/list.html.twig");
+        return $this->render("main/about.html.twig");
     }
 }
